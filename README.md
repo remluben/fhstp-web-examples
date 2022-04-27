@@ -1,3 +1,5 @@
+<img src="https://www.fhstp.ac.at/de/mediathek/bilder/ueber-uns/presse/fh-logo.jpg" alt="Logo of FH St.Pölten" width="128"/>
+
 # fhstp-web-examples
 
 A collection of examples and snippets to share with students
