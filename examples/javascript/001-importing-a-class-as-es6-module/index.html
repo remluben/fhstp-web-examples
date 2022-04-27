@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testing ECMAScript 2015 / ES6 modules</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.0/css/uikit.min.css">
+</head>
+<body class="uk-margin">
+    <div class="uk-container">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Testing ECMAScript 2015 / ES6 modules</h3>
+                    <p>
+                        <pre id="target"></pre>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import Example from './js/Example.js';
+
+        let example = new Example(document.getElementById('target'), {
+            id: 99,
+            title: "Visitor " + (new Date()).toString()
+        });
+
+        example.hello();
+
+        window.setInterval(() => {
+            example.hello();
+        }, 2500)
+    </script>
+</body>
+</html>
